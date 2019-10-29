@@ -1,5 +1,6 @@
 # Using python3.
 def max_amount_gold(bag_weight, gold_bars):
+    """Gets the maximum number of gold bars that could be stored in a bag of given weight."""
     # 2d array to store the solution to each sub problem, being the max amount of gold could be taken in the ith weight.
     dp_table = [[0 for _ in range(bag_weight + 1)] for _ in range(len(gold_bars))]
 
